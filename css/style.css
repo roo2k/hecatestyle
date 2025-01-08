@@ -85,6 +85,7 @@ html{
     padding: 5px 10px 5px 10px;
     color: #000;
     border-color: #C5B9BF;
+    opacity: 0;
 }
 .login{
     text-decoration: none;
@@ -95,6 +96,7 @@ html{
     border-color: #C5B9BF;
     margin-left: 20px;
     background-color: transparent;
+    display: none;
 }
 
 /* Анимация для плавного перехода */
@@ -463,6 +465,7 @@ body.fade-out {
 
 .t_shirt_confused {
     min-width: 240px;
+    max-width: 240px;
     width: 100%;
     min-height: 240px;
     height: 100%;
@@ -514,14 +517,9 @@ body.fade-out {
     padding-right: 2px;
 }
 .save {
+    opacity: 0;
     position: absolute;
-    margin: 10px 0 0 200px;
-    z-index: 5; 
-    transition: all 0.3s ease-out;
-    
-}
-.save:hover {
-    scale: 1.12;
+    margin: 8px 0 0 175px;
 }
 .hs_img {
     width: 185px;
@@ -1283,49 +1281,4 @@ body.fade-out {
 }
 .dropdown-item:focus {
     border: 15px solid black !important;
-}
-
-/*Exit btn*/
-.exit {
-    color: #A00C0A;
-    text-decoration: none;
-    padding: 10px 18px 10px 18px;
-    border: 1.5px solid #FF2424;
-    border-radius: 4px;
-    margin-right: 90px;
-}
-.user-info {
-    display: flex;
-    padding-top: 90px;
-    font-family: "Hero Light Regular";
-    margin-bottom: 80px;
-}
-.user-info img {
-    margin-left: 90px;
-    border-radius: 12px;
-    max-height: 256px;
-}
-.wrap-column-flex {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-    max-width: 250px;
-}
-.name {
-    font-size: 36px;
-}
-.desc {
-    font-size: 20px;
-}
-.fav-items {
-    font-family: "Hero Light Regular";
-    font-size: 36px;
-    margin-left: 85px;
-}
-.remove-product {
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    background-color: #f0f0f0;
-    cursor: pointer;
-    border-radius: 3px;
 }
