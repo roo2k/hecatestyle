@@ -1,0 +1,277 @@
+.store_inf {
+    font-family: 'GothicRus';
+    font-size: calc(34px + (5 + 5 * 0.7) * ((100vw - 320px) / 1240));
+    position: relative;
+}
+.store_inf img{
+    margin-top: 5vh;
+    margin-left: 10vw;
+    width: 200px;
+}
+
+.store_inf br {
+    display: none;
+}
+#store_hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.clothes_wrap {
+    text-align: center;
+}
+.clothes .t_shirt_confused {
+    margin-top: 1vh;
+    
+}
+.clothes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Увеличил отступ для лучшего отображения */
+    justify-content: center;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.block_item_card {
+    min-height: 1100px;
+}
+.footer_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media screen and (width < 700px) {
+    .store_inf span {
+        line-height: normal;
+    }
+}
+@media screen and (width < 938px) {
+    .block_item_card {
+        min-height: 1350px;
+    }
+}
+@media screen and (width < 695px) {
+    .block_item_card {
+        min-height: 1650px;
+    }
+}
+
+@media screen and (width < 640px) {
+    .store_content {
+        text-align: center;
+    }
+    .store_inf br {
+        display: initial;
+    }
+    .store_inf img {
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (width < 460px) {
+    .clothes {
+        width: 225px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (width < 1345px) {
+    .clothes {
+        width: 1120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (width < 1120px) {
+    .clothes {
+        width: 896px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (width < 896px) {
+    .clothes {
+        width: 672px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (width < 672px) {
+    .clothes {
+        width: 448px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (width < 448px) {
+    .clothes {
+        width: 224px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .search_header {
+        margin: 10px 0;
+    }
+
+    .button_offer_design, .login, .reg {
+        margin: 5px 0;
+    }
+
+    .block_item_card {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .store_inf {
+        text-align: center;
+    }
+
+    .store_content img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .clothes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .t_shirt_confused {
+        width: calc(50% - 20px); /* 2 колонки на мобильных устройствах */
+        margin: 10px;
+        text-align: center;
+    }
+
+    .txt_card {
+        font-size: 1.2em;
+    }
+
+    .footer_wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .t_shirt_confused {
+        width: 100%;
+    }
+
+    .txt_card {
+        font-size: 1em;
+    }
+
+    .popup, .popup-reg, .popup-offer-design {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .form-element input, .form-element button {
+        width: 100%;
+    }
+}
+
+.t_shirt_confused {
+    background-color: #DCDCDC;
+    position: relative;
+    flex: 1 1 200px; /* Базовая ширина 200px, с возможностью увеличения */
+    max-width: 240px; /* Максимальная ширина товара */
+    aspect-ratio: 1 / 1; /* Обеспечивает квадратный соотношение сторон */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    /* border-radius: 8px;  */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Добавил легкую тень */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.t_shirt_confused:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.hs_img {
+    width: 80%;
+    height: auto;
+    object-fit: contain; /* Сохраняет пропорции изображения */
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .hs_img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hs_img {
+        width: 60%;
+    }
+}
+
+.txt_card {
+    font-family: 'Hero Light Regular';
+    text-align: center;
+    font-size: 1em; /* Используйте относительные единицы */
+    color: #000;
+    margin-top: auto; /* Отодвигает текст вниз, если пространство позволяет */
+}
+
+.txt_card a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 100%;
+}
+
+.txt_dec_through {
+    text-decoration: line-through;
+    color: #4B4B4B;
+    font-size: 0.9em;
+}
+
+/* Большие экраны (десктопы) */
+@media (min-width: 1200px) {
+    .t_shirt_confused {
+        flex: 1 1 200px;
+        max-width: 240px;
+    }
+}
+
+/* Средние экраны (планшеты) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .t_shirt_confused {
+        flex: 1 1 180px;
+        max-width: 220px;
+    }
+}
+
+/* Маленькие экраны (мобильные устройства) */
+@media (max-width: 767px) and (min-width: 480px) {
+    .t_shirt_confused {
+        flex: 1 1 150px;
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 479px) {
+    .clothes {
+        gap: 10px; /* Уменьшение отступов на маленьких экранах */
+    }
+    .t_shirt_confused {
+        flex: 1 1 100%;
+        max-width: 100%;
+        aspect-ratio: auto; /* Убираем фиксированное соотношение сторон */
+    }
+    .txt_card {
+        font-size: 0.9em;
+    }
+}

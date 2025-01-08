@@ -1,0 +1,136 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about_txt {
+    font-size: 1.2rem; /* Используем rem для масштабируемости */
+    line-height: 1.6; /* Увеличиваем межстрочный интервал для удобочитаемости */
+    text-align: center; /* Центрируем текст */
+    padding: 20px; /* Добавляем отступы */
+    max-width: 100%; /* Ограничиваем максимальную ширину текста */
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    font-size: 16px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+.footer_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.imgs img {
+    transform: scale(-1, 1);
+    max-width: 482px;
+    width: 100%;
+    margin-left: 90px;
+}
+.imgs {
+    font-family: 'Hero Light Regular';
+    font-size: calc(20px + (5 + 5 * 0.7) * ((100vw - 320px) / 1240));
+    display: table-cell;
+    vertical-align: middle;
+    padding-block: 2.5vh;
+    padding-inline: 3vw;
+}
+.bg_img {
+    background-image: url(../img/about_bg.png);
+    background-repeat: no-repeat;
+    background-size: 50ch;
+    background-position: left bottom;
+}
+.about {
+    display: table-cell;
+    vertical-align: middle;
+}
+@media screen and (width < 1280px) {
+    .imgs {
+        display: inline;
+    }
+    .about_img {
+        justify-content: flex-end;
+    }
+}
+@media screen and (width < 600px) {
+    .imgs img {
+        margin-left: 0;
+    }
+    .about {
+        text-align: center;
+    }
+}
+/* Пример медиа-запросов */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_txt {
+        font-size: 1rem; /* Уменьшаем размер шрифта для планшетов */
+        padding: 15px; /* Уменьшаем отступы */
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search_header {
+        margin: 10px 0;
+    }
+
+    .button_offer_design, .login, .reg {
+        margin: 5px 0;
+    }
+
+    .block_item_card {
+        min-height: 50vh;
+    }
+
+    .about_txt {
+        font-size: 1.2rem;
+    }
+
+    .footer_wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_wrap .right {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about_txt {
+        font-size: 1rem; /* Уменьшаем размер шрифта для мобильных устройств */
+        line-height: 1.5; /* Уменьшаем межстрочный интервал */
+        padding: 10px; /* Уменьшаем отступы */
+    }
+
+    .about_txt span {
+        font-size: 1rem; /* Уменьшаем размер шрифта для дополнительного текста */
+    }
+}
+    button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .popup, .popup-reg, .popup-offer-design {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .form-element input, .form-element button {
+        width: 100%;
+    }
